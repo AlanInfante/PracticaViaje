@@ -14,4 +14,6 @@ formulario.addEventListener("submit", (event) => {
     const apellido = document.querySelector("#apellido").value;
     const mensaje = `Hola ${nombre}, ${apellido} queres ir conmigo a BRASIL?`;
     document.querySelector("#mensaje").textContent = mensaje;
+    document.querySelector("#imagen").style.display = "block";
+
 });
