@@ -1,19 +1,23 @@
-/*const contador = document.querySelector("#contar");
-let contadorClicks = 0;
+const evento = document.querySelector("#evento");
+const agrandar = document.querySelector("#agrandar");
+const reducir = document.querySelector("#reducir");
+const reset = document.querySelector("#reset");
 
-contador.addEventListener("click", () => {
-    contadorClicks++;
-    console.log(`Has hecho clic ${contadorClicks} veces`);
-    document.querySelector("#numero").textContent = contadorClicks;
-});*/
-const formulario = document.querySelector("#Viaje");
+agrandar.addEventListener ("click",() => {
+evento.classList.remove("tamañoInicial")
+evento.classList.remove("achicar")
+evento.classList.add ("agrandar")
+})
+reducir.addEventListener ("click",() => {
+evento.classList.remove("agrandar")
+evento.classList.remove("tamañoInicial")
+evento.classList.add("achicar")
+})
+reset.addEventListener ("click",()=>{
+evento.classList.remove("agrandar")
+evento.classList.remove("achicar")
+evento.classList.add("tamañoInicial")
+})
 
-formulario.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const nombre = document.querySelector("#nombre").value;
-    const apellido = document.querySelector("#apellido").value;
-    const mensaje = `Hola ${nombre}, ${apellido} queres ir conmigo a BRASIL?`;
-    document.querySelector("#mensaje").textContent = mensaje;
-    document.querySelector("#imagen").style.display = "block";
 
-});
+

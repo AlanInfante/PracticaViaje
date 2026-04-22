@@ -1,1 +1,17 @@
+.tamañoInicial {
+    font-size:  25px; 
+    color: black;
+    transition: .5s;
+}
 
+.agrandar {
+    font-size: 40px; 
+    color: red;
+    transition: .5s;
+}
+
+.achicar {
+    font-size: 16px; 
+    color: rgb(173, 241, 71);
+    transition: .5s;
+}
